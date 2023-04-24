@@ -86,12 +86,12 @@ const contains = (arr, name, cb) => {
 // includes actually returns a boolean, so we could also just do this
 // the 'arr.includes(name)' will evaluate first and result in true or false
 // and then the callback will be invoked with that boolean
-const contains = (arr, name, cb) => {
+const containsTwo = (arr, name, cb) => {
   return cb(arr.includes(name));
 };
 
 // one line with ternary and same logic as above
-const contains = (arr, name, cb) => cb(arr.includes(name));
+const containsThree = (arr, name, cb) => cb(arr.includes(name));
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
@@ -186,16 +186,6 @@ each(names, (item, index) => `The item at index ${index} is ${item}.`);
 // one line with no parentheses
 const addingFactory = (x) => (y) => x + y;
 
-// it's a little easier to wrap your head around it like this
-const addingFactory = (x) => (y) => x + y;
-
-// and here's a more straightforward syntax of the same thing
-const addingFactory = (x) => {
-  return function (y) {
-    return x + y;
-  };
-};
-
 /*
   Now that you have addingFactory, you can create other
   functions from it. 
@@ -243,7 +233,7 @@ console.log(addTen(5789));
 const addFour = addingFactory(4);
 
 console.log(addFour(4));
-console.log(addFour(4444444));
+console.log(addFour(423));
 
 ////////// CHALLENGE 2 //////////
 
@@ -287,7 +277,7 @@ const getUserById = (arr, id, cb) => {
 };
 
 // one line with ternary
-const getUserById = (arr, id, cb) =>
+const getUserByIdTwo = (arr, id, cb) =>
   arr.forEach((elem) => (elem.id === id ? cb(elem) : null));
 
 // UNCOMMENT THE FUNCTION CALL BELOW

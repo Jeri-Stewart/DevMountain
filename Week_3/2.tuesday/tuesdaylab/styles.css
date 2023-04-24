@@ -1,0 +1,45 @@
+#reset-this-root {
+    all: unset
+}
+
+body{
+    margin: 0
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+
+}
+.parent{
+    position: realative;
+    top: 0;
+    left: 0
+}
+h5 {
+    display: inline-block;
+    margin-inline: 10px;
+    margin-top: 0px;
+    font-family: Regular,Arial,Verdana,sans-serif
+
+}
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;;
+  }
+  .navbar {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    margin-right: 20px;
+    color: white;
+  }
+
+

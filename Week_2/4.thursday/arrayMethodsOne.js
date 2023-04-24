@@ -174,6 +174,6 @@ const purchases = [
 
 const bobsPurchases = purchases
   .filter((person) => person.owner === "Bob")
-  .reduce((acc, curr) => acc + curr.price);
+  .reduce((acc, curr) => acc + curr.price, 0);
 
 console.log(bobsPurchases);
