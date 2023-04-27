@@ -32,3 +32,20 @@ has_balanced_parens(sample1);
 has_balanced_parens(sample2);
 has_balanced_parens(sample3);
 has_balanced_parens(sample4);
+
+const has_balaanced_parens_two = (str) => {
+  let result = false;
+  let filteredArr = str
+    .split("")
+    .filter((char) => char === "(" || char === ")");
+  if (filteredArr.length % 2 === 0) {
+    console.log((result = true));
+  } else {
+    console.log(result);
+  }
+};
+
+has_balaanced_parens_two(sample1);
+has_balaanced_parens_two(sample2);
+has_balaanced_parens_two(sample3);
+has_balaanced_parens_two(sample4);
