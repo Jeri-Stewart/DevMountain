@@ -10,7 +10,7 @@ module.exports = {
     deleteHouse: (req, res) => {
         let index = houses.findIndex(elem => elem.id === +req.params.id)
         houses.splice(index, 1)
-        res.status(2000).send(houses)
+        res.status(200).send(houses)
     },
     createHouse: (req, res) => {
         let {address, price, imageURL} = req.body
